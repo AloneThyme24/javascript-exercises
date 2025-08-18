@@ -1,6 +1,9 @@
 const sumAll = function(start, end) {
     let runningTotal = 0;
-    for (let i = start; i <= end; i++) {
+    const min = Math.min(start, end);
+    const max = Math.max (start, end);
+
+    for (let i = min; i <= max; i++) {
         runningTotal += i;
     }
     return runningTotal;
